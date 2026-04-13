@@ -41,9 +41,9 @@ def geom_to_path(geom):
 
 
 def load_data():
-    points = gpd.read_file("../Day 6/Data/GeoJSON/points_final.geojson").to_crs(epsg=4326)
-    lines = gpd.read_file("../Day 6/Data/GeoJSON/trails_final.geojson").to_crs(epsg=4326)
-    stasiun = gpd.read_file("../Day 6/Data/GeoJSON/stasiun_final.geojson").to_crs(epsg=4326)
+    points = gpd.read_file("../Day 6/Data/GeoJSON/points_final.geojson", engine="pyogrio").to_crs(epsg=4326)
+    lines = gpd.read_file("../Day 6/Data/GeoJSON/trails_final.geojson", engine="pyogrio").to_crs(epsg=4326)
+    stasiun = gpd.read_file("../Day 6/Data/GeoJSON/stasiun_final.geojson", engine="pyogrio").to_crs(epsg=4326)
 
     points["lon"] = points.geometry.x
     points["lat"] = points.geometry.y
