@@ -1,7 +1,7 @@
 streamlit
-geopandas
 pandas
 pydeck
-shapely
-pyogrio
-fiona
+shapely>=2.0
+pyproj>=3.6
+pyogrio>=0.7
+geopandas>=0.14
