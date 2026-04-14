@@ -2,11 +2,10 @@ name: bandung-hike
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
-  - streamlit
-  - pandas
-  - pydeck
-  - geopandas
-  - pyogrio
-  - shapely
-  - pyproj
+- streamlit
+- geopandas
+- pandas
+- pydeck
+- shapely
+- pyogrio
+- pyproj
