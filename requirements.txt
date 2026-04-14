@@ -1,0 +1,7 @@
+streamlit
+pandas
+pydeck
+shapely>=2.0
+pyproj>=3.6
+pyogrio>=0.7
+geopandas>=0.14
